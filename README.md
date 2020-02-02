@@ -18,7 +18,7 @@ There are 3 access types:
 
 ## Installation
 
-1) Install [NodeJS](https://nodejs.org/en/) depending on your system
+1) Install [NodeJS](https://nodejs.org/en/) depending on your system configuration
 
 2) GanacheCLI
 
@@ -29,44 +29,17 @@ There are 3 access types:
     `npm install -g truffle`
 
 4) [Metamask Browser Extension](https://metamask.io/)
-
   
 
 ## Running the dApp
 
 **Note - You may need to manually refresh pages to view UI updates or State changes. Also please update the indexes on webpage when multiple bounties created to reflect the actual status.**
 
-
-git clone git@github.com:pravin-battu/bounty_project_app.git
-cd bounty_project_app
-npm install
-Install Truffle and Ganache globally.
-
-npm install -g truffle
-npm install -g ganache-cli
-Run Ganache with predefined seed words.
-
-Configure metamask set it to a private network (localhost 8545).
-
-In a second terminal tab compile and migrate the smart contracts.
-
-truffle compile
-truffle migrate --reset
-Test the contract by running tests in truffle.
-
-truffle test
-Run the frontend (App will be available at http://localhost:3000).
-
-npm start
-
 1) Install Truffle and Ganache globally and start ganache-cli
-
-    npm install -g truffle
-    npm install -g ganache-cli
 
 2) Configure atleast 3 accounts in Metamask using the credentials from the test blockchain. You can either import the mnemonic or manually import accounts using the private keys  
 
-3) Clone this repo  
+3) Clone this repo git@github.com:pravin-battu/bounty_project_app.git
 
 4) Open a new terminal and navigate to the repo cloned  
 
