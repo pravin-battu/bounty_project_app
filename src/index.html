@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Bounty Vault</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <h4 class="navbar-text">Current Account: <span id="currentAddress">0x0</span></h4>
+    <button class="btn navbar-btn btn-primary btn-request-access" type="button" data-addr="0x0"
+      style="display: none;"><b>Request for Job Post access</b></button>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-push-2">
+        <h1 id="pageTitle" class="text-center">Portal</h1>
+        <hr />
+        <br />
+      </div>
+    </div>
+
+    <!--Admin-->
+    <div id="adminView" style="display: none;">
+      <div class="container">
+        <div>
+          <h3> ********** Job Posters: Pending Approvals  **********</h3>
+          <div id="pendPosters">
+            <!--Pending requests-->
+          </div>
+          <div id="requesterTemplate" style="display: none;">
+            <p>
+              <span class="requesterAddress"> 0x0 </span>
+              <button class="btn btn-success btn-approve-requester" type="button" data-addr="0x0" param=> Approve
+              </button>
+              <button class="btn btn-danger btn-reject-requester" type="button" data-addr="0x0"> Reject </button>
+            </p>
+          </div>
+          <h3>********** Delete Job Posters **********</h3>
+          <div id="approvedPosters">
+            <!--Approved Posters-->
+          </div>
+          <div id="approvedTemplate" style="display: none;">
+            <p>
+              <span class="posterAddress"> 0x0 </span>
+              <button class="btn btn-danger btn-delete-poster" type="button" data-addr="0x0"> Delete </button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Job Poster-->
+    <div id="posterView" style="display: none;">
+      <div>
+        <div>
+          <h2>Post a new Bounty</h2>
+          <p>Enter Bounty Details</p>
+          <p>
+            <form id="postBounty">
+              Description:
+              <input id="bountyDesc" type="text">
+              </br>
+              </br>
+              Amount:
+              <input id="bountyAmt" type="number" min="0" step="any">
+              </br>
+              </br>
+              <input class="btn btn-primary btn-post-bounty" type="submit" value="Post">
+            </form>
+          </p>
+        </div>
+
+        <div>
+          <h2>Bounties</h2>
+          <div id="bounties">
+            <!--All Bounties-->
+          </div>
+          <div id="bountyTemplate" style="display: none;">
+            <div class="panel panel-default col-xs-12 col-sm-4 col-sm-offset-1">
+              <div class="panel-body">
+                <h4><a id="bountyLink" href="/bountyhub.html?id=0x0">Link</a></h4>
+                <p>BountyID: <span id="bountyID"> ID </span></p>
+                <p>BountyDesc: <span id="bountyDesc"> Description </span></p>
+                <p>Amount: <span id="bountyAmt"> Amount </span> Ξ</p>
+                <p>
+                  <!-- <span class="bountyID"></span> -->
+                  <button class="btn btn-danger btn-delete-bounty" type="button" data-id="0"> Delete </button>
+                </p>
+                </br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="defaultView" style="display: none;">
+      <h2>Active Bounties</h2>
+      <div id="bountyList">
+        <!--All bounties-->
+      </div>
+      <div id="bountyListItem" style="display: none;">
+        <p>
+          <h4><a id="bountyListItemDesc" href="/bountyhub.html?id=0x0">Description</a></h4>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

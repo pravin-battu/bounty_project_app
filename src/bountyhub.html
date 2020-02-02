@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Store Front</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <h4 class="navbar-text"><a href="/" class="navbar-link">Back</a></h4>
+    <h4 class="navbar-text">Current Account: <span id="currentAddress">0x0</span></h4>
+  </nav>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-push-2">
+        <h1 id="pageTitle" class="text-center">Bounty Hub</h1>
+        <hr />
+        <br />
+      </div>
+    </div>
+
+    <div id="bountyHunterView" style="display: none;">
+      <div>
+        <h2>Submit new solution</h2>
+        <form id="createSub">
+          Submission URL:
+          <input id="submissionURL" type="text"> </br></br>
+          <input class="btn btn-success btn-create-sub" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+
+
+    <div id="defaultView">
+    </div>
+
+    <div>
+      <h2>Submissions</h2>
+      <div id="submission">
+        <!--All submissions-->
+      </div>
+      <div id="subTemplate" style="display: none;">
+        <div class="panel panel-default col-xs-12 col-sm-4 col-sm-offset-1">
+          <div class="panel-body">
+            <h4 id=subDetails>Submission Details</h3>
+              <p>Submission ID: <span id="subID"> 0 </span></p>
+              <p>Bounty Hunter: <span id="subOwner"> 0 </span></p>
+              <p>URL: <span id="subURL"> 0 </span></p>
+              <span id="bountyID" style="display: none;"></span>
+              <br>
+
+              <form id="approveSub" style="display: none;">
+                <input type="hidden" id="submissionID" name="id" value="0x">
+                <input class="btn btn-success btn-submit" type="submit" value="Approve">
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/bountyhub.js"></script>
+</body>
+
+</html>
