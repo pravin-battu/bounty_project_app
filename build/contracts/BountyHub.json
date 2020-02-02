@@ -12210,6 +12210,101 @@
     "version": "0.5.12+commit.7709ece9.Emscripten.clang"
   },
   "networks": {
+    "3": {
+      "events": {
+        "0x486851f2f5eed43eafd51b72a0378f6458b5ad70649ba2c5240687558c53e7c9": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "bountyHunter",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "bountyID",
+              "type": "uint256"
+            }
+          ],
+          "name": "LogBountyAccepted",
+          "type": "event",
+          "signature": "0x486851f2f5eed43eafd51b72a0378f6458b5ad70649ba2c5240687558c53e7c9"
+        },
+        "0x3aabba6f1c6e0afbe910149ee23a18ddc44ed37138e39a3398214c1e636c75a6": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "bountyID",
+              "type": "uint256"
+            }
+          ],
+          "name": "LogBountyCreated",
+          "type": "event",
+          "signature": "0x3aabba6f1c6e0afbe910149ee23a18ddc44ed37138e39a3398214c1e636c75a6"
+        },
+        "0x93f5200de420f218115b26bd5637ebb10a728a5a08e9491f2f7f52eaac4fec01": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "bountyID",
+              "type": "uint256"
+            }
+          ],
+          "name": "LogBountyDeleted",
+          "type": "event",
+          "signature": "0x93f5200de420f218115b26bd5637ebb10a728a5a08e9491f2f7f52eaac4fec01"
+        },
+        "0x81d085b0811f0f63b3748a436eda94c61f6f36c4d898ae4ac4c819d11e84bb64": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "bountyHunter",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "bountyID",
+              "type": "uint256"
+            }
+          ],
+          "name": "LogBountySubmitted",
+          "type": "event",
+          "signature": "0x81d085b0811f0f63b3748a436eda94c61f6f36c4d898ae4ac4c819d11e84bb64"
+        },
+        "0xb11ccb60158250aae31ae6cb2508c3fa91868f01c701da0208f2ec8aee3ba736": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "bountyID",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "submissionID",
+              "type": "uint256"
+            }
+          ],
+          "name": "LogSubmissionAccepted",
+          "type": "event",
+          "signature": "0xb11ccb60158250aae31ae6cb2508c3fa91868f01c701da0208f2ec8aee3ba736"
+        }
+      },
+      "links": {},
+      "address": "0xCe4c9c02B0d027f974B9Fbe2223A3e2F4759d388",
+      "transactionHash": "0xc08199e02c82f8063adce925e1f5c0180745a443de80b528e50482099ce66db7"
+    },
     "5777": {
       "events": {
         "0x486851f2f5eed43eafd51b72a0378f6458b5ad70649ba2c5240687558c53e7c9": {
@@ -12307,7 +12402,7 @@
     }
   },
   "schemaVersion": "3.0.19",
-  "updatedAt": "2020-02-02T04:17:44.910Z",
+  "updatedAt": "2020-02-02T06:37:33.598Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {

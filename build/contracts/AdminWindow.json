@@ -6405,6 +6405,83 @@
     "version": "0.5.12+commit.7709ece9.Emscripten.clang"
   },
   "networks": {
+    "3": {
+      "events": {
+        "0x05c3cbe299f8b244da310511f75dc27b1adcb6b219fb67da1bcaf13b195d428d": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "bool",
+              "name": "state",
+              "type": "bool"
+            }
+          ],
+          "name": "LogContractStateChange",
+          "type": "event",
+          "signature": "0x05c3cbe299f8b244da310511f75dc27b1adcb6b219fb67da1bcaf13b195d428d"
+        },
+        "0x10ef3f71c4845846a34c5ab4eaa646c35f8ed3704b5bc06b673ca3ed95ab0f96": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "posterAddr",
+              "type": "address"
+            }
+          ],
+          "name": "LogPosterAccessReq",
+          "type": "event",
+          "signature": "0x10ef3f71c4845846a34c5ab4eaa646c35f8ed3704b5bc06b673ca3ed95ab0f96"
+        },
+        "0x7cb8b1f76ada4837b76381ee525f91018cc3bcac50402c2068033738b22f1b5e": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "posterAddr",
+              "type": "address"
+            }
+          ],
+          "name": "LogPosterApproved",
+          "type": "event",
+          "signature": "0x7cb8b1f76ada4837b76381ee525f91018cc3bcac50402c2068033738b22f1b5e"
+        },
+        "0x32dba557bceec4cce3f9e209448f29b327219ddef576b43de8d79de374b79bad": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "posterAddr",
+              "type": "address"
+            }
+          ],
+          "name": "LogPosterDelete",
+          "type": "event",
+          "signature": "0x32dba557bceec4cce3f9e209448f29b327219ddef576b43de8d79de374b79bad"
+        },
+        "0x83a9c36fb4498d01eba6ea1be60829085ccdc21f3f584f30bca7d1e86b648cf5": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "posterAddr",
+              "type": "address"
+            }
+          ],
+          "name": "LogPosterRejected",
+          "type": "event",
+          "signature": "0x83a9c36fb4498d01eba6ea1be60829085ccdc21f3f584f30bca7d1e86b648cf5"
+        }
+      },
+      "links": {},
+      "address": "0x838e99e2DC8768b0b0e6Ab60dE6bC1Db97C217a9",
+      "transactionHash": "0xb87efc6bb220d3a597d09cd7b5bbe277de0097e23a666ee57ec8adc9b4ed1735"
+    },
     "5777": {
       "events": {
         "0x05c3cbe299f8b244da310511f75dc27b1adcb6b219fb67da1bcaf13b195d428d": {
@@ -6484,7 +6561,7 @@
     }
   },
   "schemaVersion": "3.0.19",
-  "updatedAt": "2020-02-02T04:17:44.897Z",
+  "updatedAt": "2020-02-02T06:37:33.570Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "Allows Hub-admin to add and remove Job posters and allows Job posters to request access",
