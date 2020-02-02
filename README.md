@@ -39,7 +39,7 @@ There are 3 access types:
 
 2) Configure atleast 3 accounts in Metamask using the credentials from the test blockchain. You can either import the mnemonic or manually import accounts using the private keys  
 
-3) Clone this repo git@github.com:pravin-battu/bounty_project_app.git
+3) Clone this repo 'git@github.com:pravin-battu/bounty_project_app.git'
 
 4) Open a new terminal and navigate to the repo cloned  
 
@@ -55,11 +55,11 @@ There are 3 access types:
 
 10) Interacting with the app
 
--- **Admin** account - Initially if you interact with the app using admin account, you'll see an empty panel. Admin only approves, rejects or deletes job posters. Switch to another account to send an approval request.  
--- **Job Poster** account - Use any account except the first account to access BountyHub. You can request access as a job poster by clicking on *Request for Job Post access* button. After requesting access, switch back to admin account using metamask, refresh the browser and approve/reject the Job poster's access using the Admin Panel.  
-Once Job poster is approved, he/she can post Bounties and approve Submissions to bounties. Once a Job poster approves a submission, the bounty amount is transferred to the submitter and bounty is disabled.  
-Note - Remember to Switch to Job Poster account to post bounties.  
--- **Bounty Hunter** account - Again use any account except Admin and Job poster to submit solutions to bounties. You can view all bounties on the hub. Click on a bounty to load the Submission panel. Provide a link to your submission and wait for Job Poster to approve it.
+    * **Admin** account - Initially if you interact with the app using admin account, you'll see an empty panel. Admin only approves, rejects or deletes job posters. Switch to another account to send an approval request.  
+    * **Job Poster** account - Use any account except the first account to access BountyHub. You can request access as a job poster by clicking on *Request for Job Post access* button. After requesting access, switch back to admin account using metamask, refresh the browser and approve/reject the Job poster's access using the Admin Panel.  
+    Once Job poster is approved, he/she can post Bounties and approve Submissions to bounties. Once a Job poster approves a submission, the bounty amount is transferred to the submitter and bounty is disabled.  
+    Note - Remember to Switch to Job Poster account to post bounties.  
+    * **Bounty Hunter** account - Again use any account except Admin and Job poster to submit solutions to bounties. You can view all bounties on the hub. Click on a bounty to load the Submission panel. Provide a link to your submission and wait for Job Poster to approve it.
 
   
 
